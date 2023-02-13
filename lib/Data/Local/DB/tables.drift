@@ -1,0 +1,9 @@
+CREATE TABLE customer (
+  ID INT NOT NULL PRIMARY KEY AUTOINCREMENT,
+  Firstname varchar,
+  Lastname varchar,
+  DateOfBirth varchar,
+  PhoneNumber varchar,
+  Email varchar UNIQUE,
+  BankAccountNumber varchar
+);
