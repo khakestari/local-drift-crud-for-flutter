@@ -26,7 +26,7 @@ bool validateEmail(String value) {
 }
 
 bool validateBankAccountNumber(String value) {
-  String pattern = r'(^(?:[+0]9)?[0-9]{10,12}$)';
+  String pattern = r'(^[0-9]{16}$)';
   RegExp regExp = new RegExp(pattern);
   if (value.length == 0) {
     return false;
@@ -73,6 +73,10 @@ class createbutton extends StatelessWidget {
               print('not valid email');
               return;
             }
+            if (!validateBankAccountNumber(bankAccountNumber)) {
+              print('not valid BankAccountNumber');
+              return;
+            }
             // condtion uniqe person
             List condition = await database.getCustomer('firstname', firstname);
             // print(condition[0].lastname);
@@ -92,6 +96,7 @@ class createbutton extends StatelessWidget {
                 phoneNumber: d.Value(phoneNumber),
                 email: d.Value(email),
                 bankAccountNumber: d.Value(bankAccountNumber)));
+                
             // print(await database.getCustomer('email', 'vgu'));
             // print(await database.delCustomer('firstname', 'mmrez'));
             // print(await database.upCustomer('lastname', 'dateOfBirth', 'vgh', '9000'));
