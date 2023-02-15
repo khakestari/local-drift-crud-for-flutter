@@ -124,202 +124,233 @@ class Database extends _$Database {
   //                Update
   Future<int> upCustomer(
       String key1, String key2, String value1, String value2) async {
+    var temp;
     if (key1 == 'firstname') {
       if (key2 == 'firstname') {
-        await (update(customer)..where((tbl) => tbl.firstname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.firstname.equals(value1)))
             .write(CustomerCompanion(firstname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'lastname') {
-        await (update(customer)..where((tbl) => tbl.firstname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.firstname.equals(value1)))
             .write(CustomerCompanion(lastname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'dateOfBirth') {
-        await (update(customer)..where((tbl) => tbl.firstname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.firstname.equals(value1)))
             .write(CustomerCompanion(dateOfBirth: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'phoneNumber') {
-        await (update(customer)..where((tbl) => tbl.firstname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.firstname.equals(value1)))
             .write(CustomerCompanion(phoneNumber: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'email') {
-        await (update(customer)..where((tbl) => tbl.firstname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.firstname.equals(value1)))
             .write(CustomerCompanion(email: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'bankAccountNumber') {
-        await (update(customer)..where((tbl) => tbl.firstname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.firstname.equals(value1)))
             .write(CustomerCompanion(bankAccountNumber: Value(value2)));
-        return 1;
+        return temp;
       }
     }
     if (key1 == 'lastname') {
       if (key2 == 'firstname') {
-        await (update(customer)..where((tbl) => tbl.lastname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.lastname.equals(value1)))
             .write(CustomerCompanion(firstname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'lastname') {
-        await (update(customer)..where((tbl) => tbl.lastname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.lastname.equals(value1)))
             .write(CustomerCompanion(lastname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'dateOfBirth') {
-        await (update(customer)..where((tbl) => tbl.lastname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.lastname.equals(value1)))
             .write(CustomerCompanion(dateOfBirth: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'phoneNumber') {
-        await (update(customer)..where((tbl) => tbl.lastname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.lastname.equals(value1)))
             .write(CustomerCompanion(phoneNumber: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'email') {
-        await (update(customer)..where((tbl) => tbl.lastname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.lastname.equals(value1)))
             .write(CustomerCompanion(email: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'bankAccountNumber') {
-        await (update(customer)..where((tbl) => tbl.lastname.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.lastname.equals(value1)))
             .write(CustomerCompanion(bankAccountNumber: Value(value2)));
-        return 1;
+        return temp;
       }
     }
     if (key1 == 'dateOfBirth') {
       if (key2 == 'firstname') {
-        await (update(customer)..where((tbl) => tbl.dateOfBirth.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.dateOfBirth.equals(value1)))
             .write(CustomerCompanion(firstname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'lastname') {
-        await (update(customer)..where((tbl) => tbl.dateOfBirth.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.dateOfBirth.equals(value1)))
             .write(CustomerCompanion(lastname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'dateOfBirth') {
-        await (update(customer)..where((tbl) => tbl.dateOfBirth.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.dateOfBirth.equals(value1)))
             .write(CustomerCompanion(dateOfBirth: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'phoneNumber') {
-        await (update(customer)..where((tbl) => tbl.dateOfBirth.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.dateOfBirth.equals(value1)))
             .write(CustomerCompanion(phoneNumber: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'email') {
-        await (update(customer)..where((tbl) => tbl.dateOfBirth.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.dateOfBirth.equals(value1)))
             .write(CustomerCompanion(email: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'bankAccountNumber') {
-        await (update(customer)..where((tbl) => tbl.dateOfBirth.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.dateOfBirth.equals(value1)))
             .write(CustomerCompanion(bankAccountNumber: Value(value2)));
-        return 1;
+        return temp;
       }
     }
     if (key1 == 'phoneNumber') {
       if (key2 == 'firstname') {
-        await (update(customer)..where((tbl) => tbl.phoneNumber.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.phoneNumber.equals(value1)))
             .write(CustomerCompanion(firstname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'lastname') {
-        await (update(customer)..where((tbl) => tbl.phoneNumber.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.phoneNumber.equals(value1)))
             .write(CustomerCompanion(lastname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'dateOfBirth') {
-        await (update(customer)..where((tbl) => tbl.phoneNumber.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.phoneNumber.equals(value1)))
             .write(CustomerCompanion(dateOfBirth: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'phoneNumber') {
-        await (update(customer)..where((tbl) => tbl.phoneNumber.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.phoneNumber.equals(value1)))
             .write(CustomerCompanion(phoneNumber: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'email') {
-        await (update(customer)..where((tbl) => tbl.phoneNumber.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.phoneNumber.equals(value1)))
             .write(CustomerCompanion(email: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'bankAccountNumber') {
-        await (update(customer)..where((tbl) => tbl.phoneNumber.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.phoneNumber.equals(value1)))
             .write(CustomerCompanion(bankAccountNumber: Value(value2)));
-        return 1;
+        return temp;
       }
     }
     if (key1 == 'email') {
       if (key2 == 'firstname') {
-        await (update(customer)..where((tbl) => tbl.email.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.email.equals(value1)))
             .write(CustomerCompanion(firstname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'lastname') {
-        await (update(customer)..where((tbl) => tbl.email.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.email.equals(value1)))
             .write(CustomerCompanion(lastname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'dateOfBirth') {
-        await (update(customer)..where((tbl) => tbl.email.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.email.equals(value1)))
             .write(CustomerCompanion(dateOfBirth: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'phoneNumber') {
-        await (update(customer)..where((tbl) => tbl.email.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.email.equals(value1)))
             .write(CustomerCompanion(phoneNumber: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'email') {
-        await (update(customer)..where((tbl) => tbl.email.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.email.equals(value1)))
             .write(CustomerCompanion(email: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'bankAccountNumber') {
-        await (update(customer)..where((tbl) => tbl.email.equals(value1)))
+        temp = await (update(customer)
+              ..where((tbl) => tbl.email.equals(value1)))
             .write(CustomerCompanion(bankAccountNumber: Value(value2)));
-        return 1;
+        return temp;
       }
     }
     if (key1 == 'bankAccountNumber') {
       if (key2 == 'firstname') {
-        await (update(customer)
+        temp = await (update(customer)
               ..where((tbl) => tbl.bankAccountNumber.equals(value1)))
             .write(CustomerCompanion(firstname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'lastname') {
-        await (update(customer)
+        temp = await (update(customer)
               ..where((tbl) => tbl.bankAccountNumber.equals(value1)))
             .write(CustomerCompanion(lastname: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'dateOfBirth') {
-        await (update(customer)
+        temp = await (update(customer)
               ..where((tbl) => tbl.bankAccountNumber.equals(value1)))
             .write(CustomerCompanion(dateOfBirth: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'phoneNumber') {
-        await (update(customer)
+        temp = await (update(customer)
               ..where((tbl) => tbl.bankAccountNumber.equals(value1)))
             .write(CustomerCompanion(phoneNumber: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'email') {
-        await (update(customer)
+        temp = await (update(customer)
               ..where((tbl) => tbl.bankAccountNumber.equals(value1)))
             .write(CustomerCompanion(email: Value(value2)));
-        return 1;
+        return temp;
       }
       if (key2 == 'bankAccountNumber') {
-        await (update(customer)
+        temp = await (update(customer)
               ..where((tbl) => tbl.bankAccountNumber.equals(value1)))
             .write(CustomerCompanion(bankAccountNumber: Value(value2)));
-        return 1;
+        return temp;
       }
     }
     return -1;

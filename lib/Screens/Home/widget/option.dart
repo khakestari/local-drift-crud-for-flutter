@@ -1,5 +1,7 @@
 import 'package:crudsample/Screens/Create/create.dart';
 import 'package:crudsample/Screens/Read/read.dart';
+import 'package:crudsample/Screens/Delete/delete.dart';
+import 'package:crudsample/Screens/Update/update.dart';
 import 'package:flutter/material.dart';
 import 'package:crudsample/constants.dart';
 
@@ -71,7 +73,11 @@ class Option extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(vertical: 16, horizontal: 30),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Up();
+                }));
+              },
               child: Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 16, horizontal: 30),
@@ -92,7 +98,11 @@ class Option extends StatelessWidget {
           Container(
             padding: EdgeInsets.symmetric(vertical: 16, horizontal: 30),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return Del();
+                }));
+              },
               child: Container(
                 padding:
                     const EdgeInsets.symmetric(vertical: 16, horizontal: 30),
