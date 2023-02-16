@@ -124,6 +124,7 @@ class Database extends _$Database {
   //                Update
   Future<int> upCustomer(
       String key1, String key2, String value1, String value2) async {
+        
     var temp;
     if (key1 == 'firstname') {
       if (key2 == 'firstname') {
