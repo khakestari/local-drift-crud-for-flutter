@@ -1,16 +1,14 @@
-# crudsample
+# Drift Learning App
 
-A new Flutter project.
+This is a simple Flutter app that demonstrates how to use the drift database to perform CRUD operations with a local database. The app includes a simple UI that allows users to add, update, and delete items from the database.
 
-## Getting Started
+## Features
 
-This project is a starting point for a Flutter application.
+- Add new items to the database
+- View existing items in the database
+- Edit existing items in the database
+- Delete existing items from the database
 
-A few resources to get you started if this is your first Flutter project:
+## Dependencies
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [drift](https://drift.simonbinder.eu/) - A high-level database abstraction layer for Dart
